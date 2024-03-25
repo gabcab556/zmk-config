@@ -1,8 +1,4 @@
 #include "chocofi.dtsi"
-{
-    chosen {
-        zmk,kscan = &kscan0;
-};
 
 kscan0 {
     col-gpios
@@ -12,7 +8,5 @@ kscan0 {
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         ;
-};
-
 };
 
