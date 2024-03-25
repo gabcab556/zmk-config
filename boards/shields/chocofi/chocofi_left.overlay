@@ -1,6 +1,10 @@
 #include "chocofi.dtsi"
-
-kscan0 {
+chosen {
+    zmk,kscan = &kscan0;
+};
+kscan0: kscan {
+    compatible = "zmk,kscan-gpio-matrix";
+    diode-direction = "col2row";
     col-gpios
         = <&pro_micro 21 GPIO_ACTIVE_HIGH>
         , <&pro_micro 20 GPIO_ACTIVE_HIGH>
