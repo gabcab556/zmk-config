@@ -5,7 +5,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 
-/ {
 
 combos {
         compatible = "zmk,combos";
@@ -128,4 +127,3 @@ combos {
         };
 };
 
-};
