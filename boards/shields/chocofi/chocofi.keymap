@@ -53,13 +53,13 @@ combos {
         combo_enter {
             timeout-ms = <50>;
             keypositions = <28 29>;
-            bindings = <&KP ENTER>;
+            bindings = <&kp ENTER>;
             layers = <0>;
         };
         combo_pscrn {
             timeout-ms = <50>;
             keypositions = <8 9>;
-            bindings = <&KP ENTER>;
+            bindings = <&kp PSCRN>;
             layers = <1 2>;
         };
         combo_sys_reset_left {
