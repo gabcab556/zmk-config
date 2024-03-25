@@ -1,5 +1,6 @@
 #include "chocofi.dtsi"
 
+/ }
 kscan {
     compatible: = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
@@ -20,4 +21,4 @@ kscan {
             ;
 };
 
-
+};
