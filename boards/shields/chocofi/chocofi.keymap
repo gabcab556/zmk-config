@@ -34,7 +34,7 @@ combos {
         };
         combo_del {
             timeout-ms = <50>;
-            key-positions = <6 7>
+            key-positions = <6 7>;
             bindings = <&kp DEL>;
         };
         combo_spc {
