@@ -36,41 +36,41 @@ combos {
         };
         combo_spc {
             timeout-ms = <50>;
-            keypositions = <16 17>;
+            key-positions = <16 17>;
             bindings = <&kp SPACE>;
         };
         combo_bspc {
             timeout-ms = <50>;
-            keypositions = <17 18>;
+            key-positions = <17 18>;
             bindings = <&kp BSPC>;
         };
         combo_single_quote {
             timeout-ms = <50>;
-            keypositions = <18 19>;
+            key-positions = <18 19>;
             bindings = <&kp SQT>;
             layers = <0>;
         };
         combo_enter {
             timeout-ms = <50>;
-            keypositions = <28 29>;
+            key-positions = <28 29>;
             bindings = <&kp ENTER>;
             layers = <0>;
         };
         combo_pscrn {
             timeout-ms = <50>;
-            keypositions = <8 9>;
+            key-positions = <8 9>;
             bindings = <&kp PSCRN>;
             layers = <1 2>;
         };
         combo_sys_reset_left {
             timeout-ms = <50>;
-            keypositions = <20 21 22 23 32>;
+            key-positions = <20 21 22 23 32>;
             bindings = <&bootloader>;
             layers = <0>;
         };    
         combo_sys_reset_right {
             timeout-ms = <50>;
-            keypositions = <26 27 28 29 33>;
+            key-positions = <26 27 28 29 33>;
             bindings = <&bootloader>;
             layers = <0>;
         };    
