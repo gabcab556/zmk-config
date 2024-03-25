@@ -58,9 +58,9 @@ combos {
         };
         combo_pscrn {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <7 9>;
             bindings = <&kp PSCRN>;
-            layers = <2>;
+            layers = <0>;
         };
         combo_sys_reset_left {
             timeout-ms = <50>;
