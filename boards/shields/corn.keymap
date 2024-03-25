@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+// NOT IN USE NOT IN USE NOT IN USE NOT IN USE//
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
