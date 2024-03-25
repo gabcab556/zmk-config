@@ -1,10 +1,4 @@
-/*
- * Copyright (c) 2020 Pete Johanson
- *
- * SPDX-License-Identifier: MIT
- */
-
-#include "corne.dtsi"
+#include "chocofi.dtsi"
 
 &kscan0 {
     col-gpios
