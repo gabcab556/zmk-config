@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,matrix-transform = &default_transform;
-        zmk,scan = &kscan0
+        zmk,scan = &kscan0;
     };
 
     default_transform: keymap_transform_0 {
