@@ -20,5 +20,7 @@
 include:
   - board: nice_nano_v2
     shield: chocofi_left
+    cmake-args: ZMK_USB=n
   - board: nice_nano_v2
     shield: chocofi_right
+    cmake-args: ZMK_USB=n
