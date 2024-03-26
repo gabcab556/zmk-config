@@ -65,13 +65,13 @@ combos {
         combo_sys_reset_left {
             timeout-ms = <50>;
             key-positions = <20 32>;
-            bindings = <&bootloader>;
+            bindings = <&kp ENTER>;
             layers = <0>;
         };    
         combo_sys_reset_right {
             timeout-ms = <50>;
             key-positions = <29 33>;
-            bindings = <&bootloader>;
+            bindings = <&kp ENTERr>;
             layers = <0>;
         };    
 
