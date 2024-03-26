@@ -71,7 +71,7 @@ combos {
         combo_sys_reset_right {
             timeout-ms = <50>;
             key-positions = <29 33>;
-            bindings = <&kp ENTERr>;
+            bindings = <&kp ENTER>;
             layers = <0>;
         };    
 
