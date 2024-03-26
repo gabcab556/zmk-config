@@ -12,6 +12,5 @@ endif
 if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT
 
 config ZMK_SPLIT_BLE
-    default y
 
 endif
