@@ -1,7 +1,7 @@
 if SHIELD_CHOCOFI_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Chocofi"
+    default "chocofi"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
