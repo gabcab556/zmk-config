@@ -1,0 +1,11 @@
+file_format: "1"
+id: chocofi
+name: chocofi
+type: shield
+url: https://github.com/gabcab556
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - chocofi_left
+  - chocofi_right
