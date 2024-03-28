@@ -11,6 +11,16 @@ endif
 
 if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT
 
+config ZMK_SPLIT
+    default y
+    
 config ZMK_SPLIT_BLE
+
+config BT
+    default y
+    
+config ZMK_BLE
+    default y
+
 
 endif
