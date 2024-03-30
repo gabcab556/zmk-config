@@ -95,12 +95,12 @@
         };
         combo_F4 {
             timeout-ms = <20>;
-            key-positions = <12 24>;
+            key-positions = <12 23>;
             bindings = <&kp F4>;
         };
         combo_F5 {
             timeout-ms = <20>;
-            key-positions = <12 25>;
+            key-positions = <12 24>;
             bindings = <&kp F5>;
         };
         
