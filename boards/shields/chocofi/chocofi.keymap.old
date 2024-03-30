@@ -1,0 +1,223 @@
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/// STICKY KEY SETTINGS ///
+
+&sk {
+        release-after-ms = <500>;
+        quick-release;
+    };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // LEFT SIDE COMBO KEYS //
+
+            // LEFT ROW 0 //
+
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp TAB>;
+        };    
+
+        combo_left_click {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&mkp LCLK>;
+            layers = <0>;
+        }; 
+
+        combo_right_click {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&mkp RCLK>;
+            layers = <0>;
+        };
+
+        combo_middle_click {
+            timeout-ms = <50>;
+            key-positions = <1 2 3>;
+            bindings = <&mkp MCLK>;
+            layers = <0>;
+        };    
+
+            // STICKY KEYS //
+
+        combo_sticky_lctrl {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&sk LCTRL>;
+        };
+
+        combo_sticky_lshft {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&sk LSHFT>;
+        };
+
+        combo_sticky_lgui {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&sk LGUI>;
+        };
+
+        // RIGHT SIDE COMBO KEYS //
+
+            // RIGHT ROW 0 //
+
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp DEL>;
+        };
+
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+
+            // RIGHT ROW 1 //
+
+        combo_spc {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp SPACE>;
+        };
+
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp BSPC>;
+        };
+
+        combo_single_quote {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp SQT>;
+            layers = <0>;
+        };
+
+            // RIGHT ROW 2 //
+
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp ENTER>;
+        };
+
+        // OUTPUT MODE KEY COMBOS //
+
+        combo_output_bluetooth {
+            timeout-ms = <50>;
+            key-positions = <4 32>;
+            bindings = <&out OUT_BLE>;
+            layers = <0>;
+        }; 
+
+        combo_output_USB {
+            timeout-ms = <50>;
+            key-positions = <0 32>;
+            bindings = <&out OUT_USB>;
+            layers = <0>;
+        }; 
+
+        // EXTERNAL POWER KEY COMBOS //
+
+        combo_ext_power_on_left {
+            timeout-ms = <50>;
+            key-positions = <25 32>;
+            bindings = <&ext_power EP_ON>;
+            layers = <0>;
+        };
+
+        combo_ext_power_off_right {
+            timeout-ms = <50>;
+            key-positions = <26 33>;
+            bindings = <&ext_power EP_OFF>;
+            layers = <0>;
+        };
+
+        // RESET KEY COMBOS //
+
+        combo_sys_reset_left {
+            timeout-ms = <50>;
+            key-positions = <20 32>;
+            bindings = <&bootloader>;
+            layers = <0>;
+        };    
+
+        combo_sys_reset_right {
+            timeout-ms = <50>;
+            key-positions = <29 33>;
+            bindings = <&bootloader>;
+            layers = <0>;
+        };    
+
+    };
+
+
+    keymap {
+                compatible = "zmk,keymap";
+
+// ---------------------------Default Layer---------------------------------------------------------
+
+                0 {
+// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
+//         | LCTRL | GUI | LSHFT |   | MO 1 | MO 2  | RALT |
+                        bindings = <
+   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
+   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
+   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+     &kp LCTRL &kp GUI &kp LSHFT   &mo 1 &mo 2 &kp RALT
+                        >;
+                };
+                
+
+// ---------------------------------------Layer 1--------------------------------------------------
+
+                1 {
+                        bindings = <
+   &kp GRAVE  &trans  &trans  &trans  &trans    &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT   
+   &kp N1     &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8    &kp N9    &kp N0 
+   &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans    &kp MINUS &kp EQUAL    
+                      &trans  &trans  &trans    &trans  &trans  &trans
+                        >;
+                };
+
+// -------------------------------------Layer 2--------------------------------------------------
+
+                2 {
+                        bindings = <
+   &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &kp PSCRN
+   &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+   &trans  &trans  &trans  &trans  &trans    &kp K_PLAY_PAUSE  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &trans
+                    &trans  &mo 3  &trans    &trans  &trans  &trans  
+                        >;
+                };
+
+// ------------------------------------Layer 3--------------------------------------------------
+
+                3 {
+                        bindings = <
+   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &trans  &trans  &trans  &trans
+                                 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+                                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11 &kp F12
+                                                  &trans &trans  &trans    &trans  &trans  &trans
+                        >;
+
+
+        };
+};
+
+};
