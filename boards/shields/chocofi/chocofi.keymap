@@ -50,7 +50,7 @@
 
             // ROW 1 CROSS 0 //
 
-         combo_ one {
+         combo_one {
             timeout-ms = <20>;
             key-positions = <3 10>;
             bindings = <&kp N1>;
@@ -271,7 +271,7 @@
         };
         combo_volume_up {
             timeout-ms = <20>;
-            key-positions = <29 27;
+            key-positions = <29 27>;
             bindings = <&kp K_VOL_UP>;
         };
         combo_mute {
@@ -302,31 +302,7 @@
             key-positions = <10 14>;
             bindings = <&out OUT_USB>;
         };
-//       combo_bluetooth_select_0 {
-//           timeout-ms = <20>;
-//            key-positions = <30 35 10>;
-//            bindings = <&bt BT_SEL 0>;
-//        };
-//        combo_bluetooth_select_1 {
-//            timeout-ms = <20>;
-//            key-positions = <30 35 11>;
-//            bindings = <&bt BT_SEL 1>;
-//        };
-//        combo_bluetooth_select_2 {
-//            timeout-ms = <20>;
-//            key-positions = <30 35 12>;
-//            bindings = <&bt BT_SEL 2>;
-//        };
-//        combo_bluetooth_select_3 {
-//            timeout-ms = <20>;
-//            key-positions = <30 35 13>;
-//            bindings = <&bt BT_SEL 3>;
-//        };
-//        combo_bluetooth_select_4 {
-//            timeout-ms = <20>;
-//            key-positions = <30 35 14>;
-//            bindings = <&bt BT_SEL 4>;
-//        };
+
 
         // CONTROLLER RESET COMBOS //
 
@@ -388,8 +364,8 @@
 
                 2 {
                         bindings = <
-                         &trans  &trans  &trans  &trans  &BT BT_CLR  &trans  &trans  &trans  &trans  &trans
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans    &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &trans  &trans
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                              &trans  &trans  &trans  &trans  &trans  &trans  
                         >;
