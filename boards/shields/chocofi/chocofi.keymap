@@ -304,16 +304,16 @@
         };
 
 
-        // CONTROLLER RESET COMBOS //
+        // BOOTLOADER RESET COMBOS //
 
         combo_sys_reset_left {
             timeout-ms = <50>;
-            key-positions = <20 25>;
+            key-positions = <20 24>;
             bindings = <&bootloader>;
         };    
         combo_sys_reset_right {
             timeout-ms = <50>;
-            key-positions = <20 25>;
+            key-positions = <25 29>;
             bindings = <&bootloader>;
         };
 
@@ -322,7 +322,7 @@
         combo_layer_1 {
             timeout-ms = <50>;
             key-positions = <31 34>;
-            bindings = <&mo 2>;
+            bindings = <&mo 1>;
         };
         combo_layer_2 {
             timeout-ms = <50>;
