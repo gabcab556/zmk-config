@@ -221,3 +221,29 @@
 };
 
 };
+
+//       combo_bluetooth_select_0 {
+//           timeout-ms = <20>;
+//            key-positions = <30 35 10>;
+//            bindings = <&bt BT_SEL 0>;
+//        };
+//        combo_bluetooth_select_1 {
+//            timeout-ms = <20>;
+//            key-positions = <30 35 11>;
+//            bindings = <&bt BT_SEL 1>;
+//        };
+//        combo_bluetooth_select_2 {
+//            timeout-ms = <20>;
+//            key-positions = <30 35 12>;
+//            bindings = <&bt BT_SEL 2>;
+//        };
+//        combo_bluetooth_select_3 {
+//            timeout-ms = <20>;
+//            key-positions = <30 35 13>;
+//            bindings = <&bt BT_SEL 3>;
+//        };
+//        combo_bluetooth_select_4 {
+//            timeout-ms = <20>;
+//            key-positions = <30 35 14>;
+//            bindings = <&bt BT_SEL 4>;
+//        };
