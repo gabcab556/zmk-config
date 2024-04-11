@@ -4,7 +4,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_KEYBOARD_NAME
-    default "chocofi"
+    default "Chocofi"
 
 
 endif
