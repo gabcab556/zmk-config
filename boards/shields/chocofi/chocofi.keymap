@@ -10,7 +10,7 @@
 #define BT_SEL_LAYER 2
 #define FN_LAYER 3
 #define NUMBER_LAYER 4
-#define SHIFED_LAYER 5
+#define SHIFTED_LAYER 5
 
 
 &sk {
