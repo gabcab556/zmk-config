@@ -118,6 +118,7 @@
 
     combos {
         compatible = "zmk,combos";
+
         // NAVIGATION COMBOS //
         combo_left {
             timeout-ms = <40>;
@@ -161,12 +162,6 @@
         };
 
         // SYMBOL COMBOS //
-        //*No need to put in keymap; applies globally.//
-//        combo_grave {
-//            timeout-ms = <40>;
-//            key-positions = <3 0>;
-//            bindings = <&kp GRAVE>;
-//        };
         combo_singe_quote {
             timeout-ms = <40>;
             key-positions = <8 9>;
@@ -190,7 +185,6 @@
        
 
         // SPECIAL KEY AND MOD COMBOS //
-        //*No need to put in keymap; applies globally.//
 
         // LEFT HAND //
         combo_escape {
@@ -228,6 +222,7 @@
             key-positions = <11 12 13>;
             bindings = <&sk LS(LCTRL)>;
         };
+
         // RIGHT HAND //
         combo_delete {
             timeout-ms = <40>;
@@ -350,7 +345,6 @@
 
 
         //MOUSE KEY COMBOS//
-        //*No need to put in keymap; applies globally.//
         combo_left_click {
             timeout-ms = <40>;
             key-positions = <1 2>;
@@ -407,7 +401,7 @@
                          &trans  &trans  &trans  &trans  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                             &trans  &trans  &trans    &trans  &trans  &trans  
+                             &trans  &trans  &trans    &trans  &trans  &trans  
                         >;
                 };
 
