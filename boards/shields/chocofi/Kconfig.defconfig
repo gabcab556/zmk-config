@@ -23,5 +23,15 @@ config BT
 config ZMK_BLE
     default y
 
+config ZMK_SLEEP
+    default y
 
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 3600000
+
+config ZMK_COMBO_MAX_COMBOS_PER_KEY
+    default 20
+
+config ZMK_COMBO_MAX_PRESSED_COMBOS
+    default 20
 endif
