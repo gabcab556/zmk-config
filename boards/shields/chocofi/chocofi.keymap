@@ -18,6 +18,9 @@
     release-after-ms = <1600>;
     quick-release;
 };
+&soft_off {
+    hold-time-ms = <3000>; // Only turn off it the key is held for 3 seconds or longer.
+};
 
 / {
 
@@ -359,6 +362,13 @@
             timeout-ms = <40>;
             key-positions = <1 2 3>;
             bindings = <&mkp MCLK>;
+        };
+
+        // SOFT OFF COMBO//
+       combo_soft_off {
+            timeout-ms = <40>;
+            key-positions = <30 35>;
+            bindings = <&soft_off>;
         };
 
     // To be determined later: bluetooth and usb output combos. //
