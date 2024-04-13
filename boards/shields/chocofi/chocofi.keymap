@@ -8,9 +8,8 @@
 #define BASE_LAYER 0
 #define NAVIGATION_LAYER 1
 #define BT_SEL_LAYER 2
-#define FN_LAYER 3
-#define NUMBER_LAYER 4
-#define SHIFTED_LAYER 5
+#define NUMBER_LAYER 3
+#define SHIFTED_LAYER 4
 
 
 &sk {
@@ -416,10 +415,10 @@
 //--------------NAVIGATION_LAYER--------------//
                 NAVIGATION_LAYER {
                         bindings = <
-   &trans  &trans  &trans  &trans  &trans     &kp K_PLAY_PAUSE  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &kp PRINTSCREEN   
-   &trans  &trans  &trans  &trans  &trans     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &trans 
-   &trans  &trans &trans   &trans  &trans     &kp HOME  &kp PGDN  &kp PGUP  &kp END &trans    
-   &mo FN_LAYER  &mo BT_SEL_LAYER  &trans     &trans  &trans  &trans
+   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5      &kp K_PLAY_PAUSE  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &kp PRINTSCREEN   
+   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &trans 
+   &kp F11  &kp F12  &trans  &trans  &trans    &kp HOME  &kp PGDN  &kp PGUP  &kp END &trans    
+   &trans  &mo BT_SEL_LAYER  &trans            &trans  &trans  &trans
                         >;
                 };
 //--------------BT SELECTION LAYER--------------//
@@ -429,16 +428,6 @@
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans  
-                        >;
-                };
-
-//--------------FUNCTION KEY LAYER--------------//
-                FN_LAYER {
-                        bindings = <
-    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12
-    &trans  &trans  &trans                    &trans  &trans  &trans
                         >;
                 };
 
