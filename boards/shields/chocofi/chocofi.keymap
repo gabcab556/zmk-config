@@ -262,6 +262,11 @@
             key-positions = <26 27 28>;
             bindings = <&kp LC(ENTER)>;
         };
+        combo_shifttab {
+            timeout-ms = <40>;
+            key-positions = <10 11 12 13>;
+            bindings = <&kp LS(TAB)>;
+        };
 
         // NUMBER COMBOS //
         combo_grave {
