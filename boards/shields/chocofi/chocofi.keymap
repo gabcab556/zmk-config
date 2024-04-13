@@ -163,6 +163,16 @@
             key-positions = <19 28>;
             bindings = <&kp END>;
         };
+        combo_nav_ctrl {
+            timeout-ms = <40>;
+            key-positions = <19 28>;
+            bindings = <&nav_ctrl>;
+        };
+        combo_nav_shift_ctrl {
+            timeout-ms = <40>;
+            key-positions = <19 28>;
+            bindings = <&nav_shift_ctrl>;
+        };
 
         // SYMBOL COMBOS //
         combo_singe_quote {
@@ -200,6 +210,11 @@
         key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
+        combo_shifttab {
+            timeout-ms = <40>;
+            key-positions = <10 11 12 13>;
+            bindings = <&kp LS(TAB)>;
+        };
         combo_sticky_lshift {
             timeout-ms = <40>;
             key-positions = <13 12>;
@@ -224,6 +239,11 @@
             timeout-ms = <40>;
             key-positions = <11 12 13>;
             bindings = <&sk LS(LCTRL)>;
+        };
+        combo_ctrl_a {
+            timeout-ms = <40>;
+            key-positions = <10 11 12>;
+            bindings = <&kp LC(A)>;
         };
 
         // RIGHT HAND //
@@ -262,11 +282,7 @@
             key-positions = <26 27 28>;
             bindings = <&kp LC(ENTER)>;
         };
-        combo_shifttab {
-            timeout-ms = <40>;
-            key-positions = <10 11 12 13>;
-            bindings = <&kp LS(TAB)>;
-        };
+        
 
         // NUMBER COMBOS //
         combo_grave {
@@ -370,13 +386,20 @@
         };
 
         // SOFT OFF COMBO//
-       combo_soft_off {
+       combo_soft_off_left {
             timeout-ms = <40>;
-            key-positions = <30 35>;
+            key-positions = <30 31>;
             bindings = <&soft_off>;
         };
+        combo_soft_off_right {
+            timeout-ms = <40>;
+            key-positions = <34 35>;
+            bindings = <&soft_off>;
+        };
+            
+        };
 
-    // To be determined later: bluetooth and usb output combos. //
+    // To be determined later: output combos (bluetooth or USB). //
         
     };
 
