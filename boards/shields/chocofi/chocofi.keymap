@@ -25,7 +25,7 @@
 / {
 
     macros {
-
+    //*Not used as of now
     // NAVIGATION MACROS //
         //*Do not put in keymap; these are referred to in the binding sequence of
         // td_seminav in the 'NAVIGATION TAP DANCES AND HOLD TAP' section.
@@ -162,16 +162,6 @@
             timeout-ms = <40>;
             key-positions = <19 28>;
             bindings = <&kp END>;
-        };
-        combo_nav_ctrl {
-            timeout-ms = <40>;
-            key-positions = <19 28>;
-            bindings = <&nav_ctrl>;
-        };
-        combo_nav_shift_ctrl {
-            timeout-ms = <40>;
-            key-positions = <19 28>;
-            bindings = <&nav_shift_ctrl>;
         };
 
         // SYMBOL COMBOS //
