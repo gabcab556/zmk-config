@@ -387,7 +387,6 @@
             bindings = <&soft_off>;
         };
             
-        };
 
     // To be determined later: output combos (bluetooth or USB). //
         
