@@ -868,7 +868,6 @@ kawaii_dissatisfaction3 {                                                    // 
     &trans  &trans  &trans                         &trans  &trans  &trans
                     >;
                 };                     
-    };
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
                     bindings = <
