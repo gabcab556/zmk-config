@@ -178,7 +178,7 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
-        kawaii_love2 {                                                   // (´ ω `♡) 
+        kawaii_love2: kawaii_love2 {                                                   // (´ ω `♡) 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -200,7 +200,7 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
-        kawaii_love3 {                                                   // (´♡‿♡`) 
+        kawaii_love3: kawaii_love3 {                                                   // (´♡‿♡`) 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -223,7 +223,7 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
-      kawaii_love4 {                                                   // (≧◡≦) ♡ 
+      kawaii_love4: kawaii_love4 {                                                   // (≧◡≦) ♡ 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -244,7 +244,7 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
-        kawaii_love5 {                                                   // (´｡• ᵕ •｡`) ♡ 
+        kawaii_love5: kawaii_love5 {                                                   // (´｡• ᵕ •｡`) ♡ 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
