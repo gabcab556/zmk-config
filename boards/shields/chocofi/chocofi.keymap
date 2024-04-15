@@ -126,7 +126,7 @@
                 , <&macro_release &kp ENTER>
                 ;
         };
-        feeling_cute_star_ender {        ~☆
+        feeling_cute_star_ender {        // ~☆
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
