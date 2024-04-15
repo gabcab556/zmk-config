@@ -35,7 +35,9 @@
             bindings
                 = <&macro_press &mo NAVIGATION_LAYER>
                 , <&macro_press &kp LCTRL>
+                , <&macro_pause_for_release>
                 , <&macro_release &kp LCTRL>
+                , <&macro_release &mo NAVIGATION_LAYER>
                 ;
         };
         nav_shift_ctrl: nav_shift_ctrl {
@@ -296,7 +298,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
-            bindings = <&mo NAVIGATION_LAYER>, <&tog NAVIGATION_LAYER>;
+            bindings = <&mo NAVIGATION_LAYER>, <&nav_ctrl>;
         };
         // MOD TAP DANCES //
          td_lshift: lshft_tap_dance {
