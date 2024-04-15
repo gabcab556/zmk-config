@@ -10,6 +10,7 @@
 #define BT_SEL_LAYER 2
 #define NUMBER_LAYER 3
 #define SHIFTED_LAYER 4
+#define UNICODE_LAYER 5
 
 
 &sk {
@@ -25,7 +26,7 @@
 
     macros {
     //*Not used as of now
-    // NAVIGATION MACROS //
+        // NAVIGATION MACROS //
         //*Do not put in keymap; these are referred to in the binding sequence of
         // td_seminav in the 'NAVIGATION TAP DANCES AND HOLD TAP' section.
         nav_ctrl: nav_ctrl {
@@ -48,6 +49,433 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+        
+        // UNICODE MACROS //
+        arrow_up: arrow_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N3>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_down: arrow_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_left: arrow_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N0>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_right: arrow_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N2>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_bidirectional: arrow_bidirectional {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N4>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        bullet_black: bullet_black {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp C &kp F>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+        bullet_white: bullet_white {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+        bullet_white: bullet_white {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+
+        // UNICODE MACROS 2 //
+        feeling_cute_heart_ender {        // ~♡
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp TILDE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+        feeling_cute_star_ender {        ~☆
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp TILDE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N6 &kp N0 &kp N6>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+
+// Happy 
+        kawaii_happy1 {                                                 // (≧◡≦)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp N7>             //left eye
+                , <&macro_release &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N1>              //mouth
+                , <&macro_release &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp N6>             //right eye
+                , <&macro_release &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+        kawaii_happy2 {                                                 // („• ᴗ •„) 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <<&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N1 &kp E>             //left blush
+                , <&macro_release &kp ENTER>
+                , <<&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N2>             //left eye
+                , <&macro_release &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N1 &kp D &kp N1 &kp N7>              //mouth
+                , <&macro_tap ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N2>             //right eye
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N1 &kp E>             //right blush
+                , <&macro_tap ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+        kawaii_happy3 {                                                 // (๑>◡<๑) 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <<&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp E &kp N5 &kp N1>             //left blush
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N3 &kp E>             //left eye
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N1>              //mouth
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N3 &kp C>             //right eye
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp E &kp N5 &kp N1>             //right blush
+                , <&macro_tap ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+        kawaii_happy4 {                                                 // (ᵔ◡ᵔ) 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N1 &kp D &kp N5 &kp N4>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N1>              //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N1 &kp D &kp N5 &kp N4>             //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+        kawaii_happy5 {                                                 // ＼(＾▽＾)／
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N3 &kp C>                 //left arm
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N3 &kp E>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp B &kp D>              //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N3 &kp E>              //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N0 &kp C>                 //right arm
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+
+// Love      	
+        kawaii_love1 {                                                   // (´ ε ` )♡
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp B &kp N4>             //left eye
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N3 &kp B &kp N5>              //mouth
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N6 &kp N0>             //right eye
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>   
+                , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>             //heart
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        kawaii_love2 {                                                   // (´ ω `♡) 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp N0 &kp N0 &kp B &kp N4>             //left eye
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N3 &kp C &kp N9>              //mouth
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N6 &kp N0>              //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>             //heart
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+        kawaii_love3 {                                                   // (´♡‿♡`) 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp N0 &kp N0 &kp B &kp N4>             //left eye corner
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>     
+                , <&macro_tap &kp N2 &kp N0 &kp N3 &kp F>              //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>              //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N6 &kp N0>             //right eye corner
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+      kawaii_love4 {                                                   // (≧◡≦) ♡ 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                            
+                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp N7>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>     
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N1>              //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp N6>              //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                , <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>              //heart
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        kawaii_love5 {                                                   // (´｡• ᵕ •｡`) ♡ 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp N0 &kp N0 &kp B &kp N4>             //left eye corner
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp F &kp F &kp N6 &kp N1>             //left blush
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N2>             //left eye
+                , <&macro_tap &kp ENTER> <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>     
+                , <&macro_tap &kp N1 &kp D &kp N5 &kp N5>              //mouth
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N2>              //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N6 &kp N1>             //right blush
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N6 &kp N0>             //right eye corner
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                , <&macro_tap &kp SPACE>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp N1>             //heart
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+
+
+// Dissatisfaction     
+
+
+        kawaii_dissatisfaction1 {                                                    // (ᗒᗣᗕ)՞
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp N1 &kp N5 &kp D &kp N2>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N1 &kp N5 &kp D &kp N3>             //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N1 &kp N5 &kp D &kp N5>             //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                 //right side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N5 &kp N5 &kp E>             //sweat
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+kawaii_dissatisfaction2 {                                                    // (＞﹏＜)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp F &kp F &kp N1 &kp E>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp E &kp N4 &kp F>             //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N1 &kp C>              //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                 //right side of face
+                ;
+        };
+kawaii_dissatisfaction3 {                                                    // (〃＞＿＜;〃)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
+                , <&macro_tap &kp N3 &kp N0 &kp N0 &kp N3>             //left blush
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N1 &kp E>             //left eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N3 &kp F>              //mouth
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp F &kp F &kp N1 &kp C>               //right eye
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp 0 &kp N0 &kp N3 &kp B>              //sweat
+                , <&macro_tap &kp ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N3 &kp N0 &kp N0 &kp N3>              //right blush
+                , <&macro_tap &kp ENTER>
+                , <&macro_tap &kp RPAR>                                 //right side of face
+                ;
+        };
+
+
+
+//Sad to-do list: (╥﹏╥)   (｡•́︿•̀｡)
+        kawaii_sad {                                                    // (╥﹏╥)  
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>
+                , <&macro_tap &kp U>
+                , <&macro_tap &kp N2 &kp N5 &kp N6 &kp N5>             //left eye
+                , <&macro_tap &kp F &kp E &kp N4 &kp F>              //mouth
+                , <&macro_tap &kp N2 &kp N5 &kp N6 &kp N5>             //right eye
+                , <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
+
+
+
+
+
+
+//Surprised to-do list: (°ロ°) !  
+
+//Greeting to-do list: (*・ω・)ﾉ (^０^)ノ  (≧▽≦)/
+
+//Pain to-do list: ☆⌒(> _ <)   ~(>_<~)   (×﹏×)
+
+
+//Confused to-do list: (•ิ_•ิ)?  (-_-;)・・・
+
+// Faces to-do list ( ͡° ͜ʖ ͡°)  ( ͡° ʖ̯ ͡°)  ( ͠° ͟ʖ ͡°) ( ͡ᵔ ͜ʖ ͡ᵔ)  ( . •́ _ʖ •̀ .)
+
+
+//Angry to-do list: (＃`Д´) ヽ( `д´*)ノ
+
+//Fyou to-do list:  	凸(￣ヘ￣)  凸(`△´＃)  凸( ` ﾛ ´ )凸
 
     };
 
@@ -101,19 +529,21 @@
             tapping-term-ms = <200>;
             bindings = <&mo NUMBER_LAYER>, <&sl 5>;
         };
+
         // SHIFT KEY TAP DANCE //
         td_shiftthumb: shift_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LSHIFT>, <&sl 5>;
+            bindings = <&kp LSHIFT>, <&sl 4>, <&sl 5>;
         };
+
         // SPACE KEY TAP DANCE //
         td_space: space_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp SPACE>, <&sl 4>;
+            bindings = <&kp SPACE>, <&sl 3>;
         };
 
     };
@@ -355,8 +785,6 @@
             bindings = <&kp RBKT>;
         };
 
-
-
         //MOUSE KEY COMBOS//
         combo_left_click {
             timeout-ms = <40>;
@@ -446,6 +874,16 @@
     &kp TILDE  &trans  &trans  &trans  &trans      &trans  &trans  &kp PIPE  &kp LBRC  &kp RBRC
     &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &kp UNDER  &kp PLUS
+    &trans  &trans  &trans                         &trans  &trans  &trans
+                    >;
+                };                     
+    };
+//--------------UNICODE LAYER--------------//
+                UNICODE_LAYER {
+                    bindings = <
+    &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+    &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &kawaii_happy4  &kawaii_happy5      &arrow_left  &arrow_down  &arrow_up  &arrow_right  &arrow_bidirectional
+    &trans  &trans  &trans  &trans  &trans      &trans  &bullet_black  &bullet_white  &trans  &trans
     &trans  &trans  &trans                         &trans  &trans  &trans
                     >;
                 };                     
