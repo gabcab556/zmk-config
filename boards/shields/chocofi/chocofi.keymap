@@ -91,6 +91,29 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
+        kawaii_happy3: kawaii_happy3 {                                                 // (๑>◡<๑) 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR>                                 //left side of face
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp E &kp N5 &kp N1>             //left blush
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N3 &kp E>             //left eye
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N1>              //mouth
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp N3 &kp C>             //right eye
+                , <&macro_tap ENTER>
+                , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp E &kp N5 &kp N1>             //right blush
+                , <&macro_tap ENTER>
+                , <&macro_tap &kp RPAR>                                //right side of face
+                ;
+        };
         
 
     };
@@ -497,7 +520,7 @@
                 UNICODE_LAYER {
                     bindings = < 
     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
-    &kawaii_happy1  &kawaii_happy2  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+    &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &trans  &trans      &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans                         &trans  &trans  &trans
                     >;
