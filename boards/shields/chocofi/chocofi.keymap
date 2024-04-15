@@ -340,7 +340,7 @@
                 , <&macro_tap &kp ENTER>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N2>             //left eye
-                , <&macro_tap &kp ENTER> <&macro_tap &kp SPACE>
+                , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>     
                 , <&macro_tap &kp N1 &kp D &kp N5 &kp N5>              //mouth
                 , <&macro_tap &kp ENTER>, <&macro_tap &kp SPACE>
