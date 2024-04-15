@@ -138,7 +138,7 @@
         };
 
 // Happy 
-        kawaii_happy1 {                                                 // (≧◡≦)
+        kawaii_happy1: kawaii_happy1 {                                                 // (≧◡≦)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -155,7 +155,7 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
-        kawaii_happy2 {                                                 // („• ᴗ •„) 
+        kawaii_happy2: kawaii_happy2 {                                                 // („• ᴗ •„) 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -178,7 +178,7 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
-        kawaii_happy3 {                                                 // (๑>◡<๑) 
+        kawaii_happy3: kawaii_happy3 {                                                 // (๑>◡<๑) 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -201,7 +201,7 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
-        kawaii_happy4 {                                                 // (ᵔ◡ᵔ) 
+        kawaii_happy4: kawaii_happy4 {                                                 // (ᵔ◡ᵔ) 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -218,7 +218,7 @@
                 , <&macro_tap &kp RPAR>                                //right side of face
                 ;
         };
-        kawaii_happy5 {                                                 // ＼(＾▽＾)／
+        kawaii_happy5: kawaii_happy5 {                                                 // ＼(＾▽＾)／
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -870,11 +870,7 @@ kawaii_dissatisfaction3 {                                                    // 
                 };                     
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
-                    bindings =  <&kawaii_happy1 &kawaii_happy2 &kawaii_happy3 &kawaii_happy4 &kawaii_happy5>;
-                                //<&kawaii_happy1>; <&kawaii_happy2>; <&kawaii_happy3>; <&kawaii_happy4>; <&kawaii_happy5>;  
-                                //<&arrow_left>; <&arrow_down>; <&arrow_up>; <&arrow_right>; <&arrow_bidirectional>;
-                                //<&bullet_black>; <&bullet_white>;
-                                < 
+                    bindings = < 
     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
     &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &kawaii_happy4  &kawaii_happy5      &arrow_left  &arrow_down  &arrow_up  &arrow_right  &arrow_bidirectional
     &trans  &trans  &trans  &trans  &trans      &trans  &bullet_black  &bullet_white  &trans  &trans
