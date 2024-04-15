@@ -870,7 +870,10 @@ kawaii_dissatisfaction3 {                                                    // 
                 };                     
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
-                    bindings = <
+                    bindings =  <&kawaii_happy1>; <kawaii_happy2>; <kawaii_happy3>; <kawaii_happy4>; <kawaii_happy5>;  
+                                <&arrow_left>; <&arrow_down>;  <&arrow_up>;  <&arrow_right>;  <&arrow_bidirectional>;
+                                <&bullet_black>; <&bullet_white>;
+                                < 
     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
     &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &kawaii_happy4  &kawaii_happy5      &arrow_left  &arrow_down  &arrow_up  &arrow_right  &arrow_bidirectional
     &trans  &trans  &trans  &trans  &trans      &trans  &bullet_black  &bullet_white  &trans  &trans
