@@ -164,7 +164,7 @@
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
                 , <&macro_tap &kp N0 &kp N0 &kp N2 &kp D>             //right eye
                 , <&macro_tap &kp ENTER>
-                , <&macro_tap &kp RPAR>;                                //right side of face
+                , <&macro_tap &kp RPAR>                                //right side of face
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
                 , <&macro_tap &kp N2 &kp N7 &kp N2 &kp N7>             //star
                 , <&macro_tap &kp ENTER>
