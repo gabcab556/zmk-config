@@ -1118,7 +1118,7 @@
                 UNICODE_LAYER {
                     bindings = < 
     &kawaii_greet1  &kawaii_greet2  &kawaii_greet3  &kawaii_special1  &kawaii_wink1    &kawaii_confused1  &kawaii_surprised1  &kawaii_pain1  &kawaii_pain2  &kawaii_pain3
-    &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &kawaii_happy4  &kawaii_happy5    &kawaii_dissatisfaction  &kawaii_dissatisfaction  &kawaii_dissatisfaction  &feeling_cute_heart  &feeling_cute_star
+    &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &kawaii_happy4  &kawaii_happy5    &kawaii_dissatisfaction1  &kawaii_dissatisfaction2  &kawaii_dissatisfaction3  &feeling_cute_heart  &feeling_cute_star
     &kawaii_love1  &kawaii_love2  &kawaii_love3  &kawaii_love4  &kawaii_love5    &kawaii_angry1  &kawaii_angry2  &kawaii_fyou1  &kawaii_fyou2  &kawaii_fyou3
     &trans  &trans  &trans                                                       &trans  &trans  &trans
                     >;
