@@ -80,7 +80,7 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
-        kawaii_greet2 {                                                    // (^０^)ノ  
+        kawaii_greet2: kawaii_greet2 {                                                    // (^０^)ノ  
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
