@@ -108,7 +108,7 @@
             bindings
                 = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N2 &kp N5 &kp C &kp F>
-                , <&macro_release &kp ENTER>
+                , <&macro_tap &kp ENTER>
                 ;
         };
         bullet_white: bullet_white {
@@ -117,7 +117,7 @@
             bindings
                 = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
-                , <&macro_release &kp ENTER>
+                , <&macro_tap &kp ENTER>
                 ;
         };
         bullet_triangle: bullet_triangle {
@@ -126,7 +126,7 @@
             bindings
                 = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N3>
-                , <&macro_release &kp ENTER>
+                , <&macro_tap &kp ENTER>
                 ;
         };
 
@@ -182,7 +182,7 @@
             bindings
                 = <&macro_tap &kp LPAR>                                 //left side of face
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
-                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp 7>             //left eye
+                , <&macro_tap &kp N2 &kp N2 &kp N6 &kp N7>             //left eye
                 , <&macro_tap &kp ENTER>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
                 , <&macro_tap &kp N2 &kp N5 &kp B &kp D>             //mouth
@@ -192,7 +192,7 @@
                 , <&macro_tap &kp ENTER>
                 , <&macro_tap &kp RPAR>                                 //right side of face
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
-                , <&macro_tap &kp N0 &kp N0 &kp F>             //right arm
+                , <&macro_tap &kp N0 &kp N0 &kp N2 &kp F>             //right arm
                 , <&macro_tap &kp ENTER>
                 ;
         };
@@ -347,7 +347,7 @@
                 , <&macro_tap &kp ENTER>
                 , <&macro_tap &kp RPAR>                                //right side of face
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
-                , <&macro_tap &kp F &kp F &kp N0 &kp C>                 //right arm
+                , <&macro_tap &kp F &kp F &kp N0 &kp F>                 //right arm
                 , <&macro_tap &kp ENTER>
                 ;
         };
@@ -557,7 +557,7 @@
                 , <&macro_tap &kp N0 &kp N0 &kp N3 &kp E>             //left eye
                 , <&macro_tap &kp ENTER>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
-                , <&macro_tap &kp N0 &kp N0 &kp N5 &kp 5>             //mouth
+                , <&macro_tap &kp N0 &kp N0 &kp N5 &kp F>             //mouth
                 , <&macro_tap &kp ENTER>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>                
                 , <&macro_tap &kp N0 &kp N0 &kp N3 &kp C>             //right eye
@@ -596,7 +596,7 @@
                 , <&macro_tap &kp N1 &kp N5 &kp D &kp N2>             //left eye
                 , <&macro_tap &kp ENTER>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
-                , <&macro_tap &kp N1 &kp N5 &kp D &kp N3>             //mouth
+                , <&macro_tap &kp N1 &kp N5 &kp E &kp N3>             //mouth
                 , <&macro_tap &kp ENTER>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N1 &kp N5 &kp D &kp N5>             //right eye
@@ -659,7 +659,7 @@
                 = <&macro_tap &kp TILDE>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N2 &kp N6 &kp N6 &kp N1>
-                , <&macro_release &kp ENTER>
+                , <&macro_tap &kp ENTER>
                 ;
         };
         feeling_cute_star: feeling_cute_star {        // ~☆
@@ -669,7 +669,7 @@
                 = <&macro_tap &kp TILDE>
                 , <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
                 , <&macro_tap &kp N2 &kp N6 &kp N0 &kp N6>
-                , <&macro_release &kp ENTER>
+                , <&macro_tap &kp ENTER>
                 ;
         };
 
