@@ -11,6 +11,7 @@
 #define NUMBER_LAYER 3
 #define SHIFTED_LAYER 4
 #define UNICODE_LAYER 5
+#define KAOMOJI_LAYER 6
 
 
 &sk {
@@ -54,7 +55,82 @@
                 ;
         };
 
-    // TEXT EMOTICONS //
+    // UNICODE SYMBOL MACROS //
+
+        arrow_down: arrow_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N3>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_up: arrow_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_left: arrow_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N0>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_right: arrow_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N2>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        arrow_bidirectional: arrow_bidirectional {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N4>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+        bullet_black: bullet_black {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N5 &kp C &kp F>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+        bullet_white: bullet_white {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+        bullet_triangle: bullet_triangle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N3>
+                , <&macro_release &kp ENTER>
+                ;
+        };
+
+    // TEXT EMOTICON MACROS //
 
         //Greetings
         kawaii_greet1: kawaii_greet1 {                                                    // (*・ω・)ﾉ  
@@ -772,7 +848,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LSHIFT>, <&sl 4>, <&sl 5>;
+            bindings = <&kp LSHIFT>, <&sl 4>, <&sl 5>, <&sl 6>;
         };
 
         // SPACE KEY TAP DANCE //
@@ -1113,9 +1189,18 @@
     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &kp UNDER  &kp PLUS
     &trans  &trans  &trans                         &trans  &trans  &trans
                     >;
-                };                     
+                };
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
+                    bindings = <
+    &trans  &trans  &trans  &trans  &trans         &trans  &trans  &bullet_triangle  &bullet_black  &bullet_white
+    &trans  &trans  &trans  &trans  &trans         &arrow_left  &arrow_down  &arrow_up &arrow_right &arrow_bidirectional
+    &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+    &trans  &trans  &trans                         &trans  &trans  &trans
+                    >;
+                };      
+//--------------KAOMOJI LAYER--------------//
+                KAOMOJI_LAYER {
                     bindings = < 
     &kawaii_greet1  &kawaii_greet2  &kawaii_greet3  &kawaii_special1  &kawaii_wink1    &kawaii_confused1  &kawaii_surprised1  &kawaii_pain1  &kawaii_pain2  &kawaii_pain3
     &kawaii_happy1  &kawaii_happy2  &kawaii_happy3  &kawaii_happy4  &kawaii_happy5    &kawaii_dissatisfaction1  &kawaii_dissatisfaction2  &kawaii_dissatisfaction3  &feeling_cute_heart  &feeling_cute_star
