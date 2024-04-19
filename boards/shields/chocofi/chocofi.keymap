@@ -102,14 +102,14 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
-        degree: degree {
-        compatible: "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release LSHIFT>, <&macro_release LCTRL>
-            , <&macro_tap &kp N0 &kp N0 &kp B &kp N0>
-            , <&macro_tap &kp ENTER>
-            ;
+        degree_symbol: degree_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N0 &kp N0 &kp B &kp N0>
+                , <&macro_tap &kp ENTER>
+                ;
         };
         bullet_black: bullet_black {
             compatible = "zmk,behavior-macro";
@@ -1201,7 +1201,7 @@
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
                     bindings = <
-    &trans  &trans  &trans  &trans  &trans         &trans  &degree  &bullet_triangle  &bullet_black  &bullet_white
+    &trans  &trans  &trans  &trans  &trans         &trans  &degree_symbol  &bullet_triangle  &bullet_black  &bullet_white
     &trans  &trans  &trans  &trans  &trans         &arrow_left  &arrow_down  &arrow_up &arrow_right &arrow_bidirectional
     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans                         &trans  &trans  &trans
