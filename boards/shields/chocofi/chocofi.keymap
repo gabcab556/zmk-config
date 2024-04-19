@@ -102,6 +102,15 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
+        degree: degree {
+        compatible: "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release LSHIFT>, <&macro_release LCTRL>
+            , <&macro_tap &kp N0 &kp N0 &kp B &kp N0>
+            , <&macro_tap &kp ENTER>
+            ;
+        };
         bullet_black: bullet_black {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -125,7 +134,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
-                , <&macro_tap &kp N2 &kp N0 &kp N2 &kp N3>
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N6>
                 , <&macro_tap &kp ENTER>
                 ;
         };
@@ -793,20 +802,19 @@
     };
 
     behaviors {
-        // SPACE HOLD-TAP
-        spaceht: space_numberrow_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <600>;
-            bindings  = <&mo>, <&kp>;
+        // QUOTE SYMBOL TAP DANCE //
+        td_quote: quote_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings  = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
 
         // NAVIGATION TAP DANCE //
         td_navlayer: navigation_layer_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <200>;
             bindings = <&mo NAVIGATION_LAYER>, <&nav_ctrl>, <&nav_shift_ctrl>;
         };
         // MOD TAP DANCES //
@@ -907,10 +915,10 @@
         };
 
         // SYMBOL COMBOS //
-        combo_singe_quote {
+        combo_quote {
             timeout-ms = <40>;
             key-positions = <8 9>;
-            bindings = <&kp SQT>;
+            bindings = <&td_quote>;
         };
         combo_backslash2 {
             timeout-ms = <40>;
@@ -1193,7 +1201,7 @@
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
                     bindings = <
-    &trans  &trans  &trans  &trans  &trans         &trans  &trans  &bullet_triangle  &bullet_black  &bullet_white
+    &trans  &trans  &trans  &trans  &trans         &trans  &degree  &bullet_triangle  &bullet_black  &bullet_white
     &trans  &trans  &trans  &trans  &trans         &arrow_left  &arrow_down  &arrow_up &arrow_right &arrow_bidirectional
     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans                         &trans  &trans  &trans
