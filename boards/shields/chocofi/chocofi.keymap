@@ -802,6 +802,15 @@
     };
 
     behaviors {
+
+        //SPACE HOLD-TAP//
+        spaceht: space_holdtap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+            bindings = <&mo>, <&kp>; 
+        };
         // QUOTE SYMBOL TAP DANCE //
         td_quote: quote_tap_dance {
             compatible = "zmk,behavior-tap-dance";
