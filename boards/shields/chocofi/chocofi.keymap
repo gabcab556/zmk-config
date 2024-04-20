@@ -125,16 +125,16 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
-                , <&macro_tap &kp N2 &kp N1 &kp N9 &kp N1>
+                , <&macro_tap &kp N2 &kp N5 &kp E &kp N6>
                 , <&macro_tap &kp ENTER>
                 ;
         };
-        bullet_triangle: bullet_triangle {
+        right_pointer: right_pointer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHIFT>, <&macro_press &kp LCTRL>, <&macro_tap &kp U>, <&macro_release &kp LSHIFT>, <&macro_release &kp LCTRL>
-                , <&macro_tap &kp N2 &kp N5 &kp E &kp N6>
+                , <&macro_tap &kp N2 &kp N5 &kp B &kp A>
                 , <&macro_tap &kp ENTER>
                 ;
         };
@@ -1210,7 +1210,7 @@
 //--------------UNICODE LAYER--------------//
                 UNICODE_LAYER {
                     bindings = <
-    &trans  &trans  &trans  &trans  &trans         &trans  &degree_symbol  &bullet_triangle  &bullet_black  &bullet_white
+    &trans  &trans  &trans  &trans  &trans         &trans  &degree_symbol  &right_pointer  &bullet_black  &bullet_white
     &trans  &trans  &trans  &trans  &trans         &arrow_left  &arrow_down  &arrow_up &arrow_right &arrow_bidirectional
     &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
     &trans  &trans  &trans                         &trans  &trans  &trans
