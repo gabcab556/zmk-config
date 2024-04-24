@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LSHIFT>, <&sl SHIFTED_LAYER>
+            bindings = <&kp LSHIFT>, <&sl SHIFTED_LAYER>;
         };
         // NAVIGATION TAP DANCE //
         td_navlayer: navigation_layer_tap_dance {
@@ -255,4 +255,4 @@
                 };
     };
 
-}/
+};
