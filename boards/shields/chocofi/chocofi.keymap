@@ -70,13 +70,6 @@
     };
 
     behaviors {
-        // NUMBER_LAYER TAP DANCE //
-        td_numlayer: td_numlayer {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings  = <&mo NUMBER_LAYER>, <&mo UNICODE_LAYER>;
-        };
         // SHIFT KEY TAP DANCE //
         // In progress:
         td_shiftthumb: shift_tap_dance {
@@ -211,7 +204,7 @@
     &kp Q &kp W  &kp E &kp R &kp T          &kp Y &kp U  &kp I    &kp O   &kp P
     &kp A &kp S  &kp D &kp F &kp G          &kp H &kp J  &kp K     &kp L   &kp SEMICOLON
     &kp Z &kp X  &kp C &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-    &kp LCTRL  &td_numlayer  &td_shiftthumb    &kp SPACE  &td_navlayer  &kp RALT
+    &kp LCTRL  &sl NUMBER_LAYER  &td_shiftthumb    &kp SPACE  &td_navlayer  &kp RALT
                         >;
                 };
 //--------------NAVIGATION_LAYER--------------//
