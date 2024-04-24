@@ -198,7 +198,7 @@
     };
 
     keymap {
-                compatible = "zmk-keymap";
+                compatible = "zmk,keymap";
 //--------------BASE_LAYER--------------//
                 BASE_LAYER {
                         bindings = <
