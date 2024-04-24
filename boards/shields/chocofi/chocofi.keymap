@@ -194,7 +194,12 @@
             key-positions = <33 9>;
             bindings = <&kp RBKT>;
         };
-
+        combo_soft_off {
+            timeout-ms = <40>;
+            key-positions = <30 31>;
+            bindings = <&soft_off>;
+        };
+       
     };
 
     keymap {
