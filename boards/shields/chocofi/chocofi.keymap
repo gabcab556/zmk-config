@@ -116,90 +116,102 @@
             tapping-term-ms = <200>;
             bindings = <&sk LALT>, <&kt LALT>;
         };
+        // SINGLE QUOTE TAP DANCE // 
+        td_sqt: single_quote_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+        };
+        // BACKSLASH AND BRACKETS TAP DANCES //
+        td_bslh:back_slash_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BACKSLASH>, <&kp PIPE>;
+        };
+        td_lbkt: left_bracket_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+        };
+        td_rbkt: right_bracket_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+        };
     };
 
     combos {
-        // NUMBER COMBOS //
-        combo_grave {
-            timeout-ms = <40>;
-            key-positions = <32 0>;
-            bindings = <&kp GRAVE>;
-        };
-        combo_one {
-            timeout-ms = <40>;
-            key-positions = <32 10>;
-            bindings = <&kp N1>;
-        };
-        combo_two {
-            timeout-ms = <40>;
-            key-positions = <32 11>;
-            bindings = <&kp N2>;
-        };
-        combo_three {
-            timeout-ms = <40>;
-            key-positions = <32 12>;
-            bindings = <&kp N3>;
-        };
-        combo_four {
+        compatible = "zmk,combos"
+        // HOMEROW MOD COMBOS (LEFT HAND) //
+        combo_lshift {
             timeout-ms = <40>;
             key-positions = <32 13>;
-            bindings = <&kp N4>;
+            bindings = <&td_lshift>;
         };
-        combo_five {
+        combo_lctrl {
             timeout-ms = <40>;
-            key-positions = <32 14>;
-            bindings = <&kp N5>;
+            key-positions = <32 12>;
+            bindings = <&td_lctrl>;
         };
-        combo_six {
+        combo_lgui {
             timeout-ms = <40>;
-            key-positions = <33 15>;
-            bindings = <&kp N6>;
+            key-positions = <32 2>;
+            bindings = <&td_lgui>;
         };
-        combo_seven {
+        combo_lalt {
             timeout-ms = <40>;
-            key-positions = <33 16>;
-            bindings = <&kp N7>;
+            key-positions = <32 3>;
+            bindings = <&td_lalt>;
         };
-        combo_eight {
+        // SPECIAL KEY COMBOS (LEFT HAND) //
+        combo_escape {
             timeout-ms = <40>;
-            key-positions = <33 17>;
-            bindings = <&kp N8>;
+            key-positions = <32 0 1>;
+            bindings = <&kp ESCAPE>;
         };
-        combo_nine {
+        combo_tab {
             timeout-ms = <40>;
-            key-positions = <33 18>;
-            bindings = <&kp N9>;
+            key-positions = <32 10>;
+            bindings = <&kp ESCAPE>;
         };
-        combo_zero {
+        combo_enter_left {
             timeout-ms = <40>;
-            key-positions = <33 19>;
-            bindings = <&kp N0>;
+            key-positions = <32 20>;
+            bindings = <&kp ESCAPE>;
         };
-        combo_minus {
-            timeout-ms = <40>;
-            key-positions = <33 28>;
-            bindings = <&kp MINUS>;
-        };
-        combo_equal {
+        // SPECIAL KEY COMBOS (RIGHT HAND) //
+        combo_enter_right {
             timeout-ms = <40>;
             key-positions = <33 29>;
-            bindings = <&kp EQUAL>;
+            bindings = <&kp ENTER>;
         };
+        // SINGLE QUOTE COMBO (RIGHT HAND) //
+        combo_single_quote {
+            timeout-ms = <40>;
+            key-positions = <33 19>;
+            bindings = <&td_sqt>;
+        };
+        // BACKSLASH AND BRACKETS COMBOS (RIGHT HAND) //
         combo_backslash {
             timeout-ms = <40>;
             key-positions = <33 7>;
-            bindings = <&kp BSLH>;
+            bindings = <&td_bslh>;
         };
-        combo_leftbracket {
+        combo_left_bracket {
             timeout-ms = <40>;
             key-positions = <33 8>;
-            bindings = <&kp LBKT>;
+            bindings = <&td_lbkt>;
         };
-        combo_rightbracket {
+        combo_right_bracket {
             timeout-ms = <40>;
             key-positions = <33 9>;
-            bindings = <&kp RBKT>;
+            bindings = <&td_rbkt>;
         };
+        // SOFT OFF COMBO //
         combo_soft_off {
             timeout-ms = <40>;
             key-positions = <30 31>;
@@ -222,9 +234,9 @@
 //--------------NAVIGATION_LAYER--------------//
                 NAVIGATION_LAYER {
                         bindings = <
-   &kp ESCAPE  &lctrl_delete  &kp DELETE  &kp BSPC  &lctrl_bspc               &lctrl_bspc &kp BSPC  &kp DELETE  &lctrl_delete  &kp ESCAPE   
+   &kp ESCAPE  &lctrl_delete  &kp DELETE  &kp BSPC  &lctrl_bspc               &lctrl_bspc &kp BSPC  &kp DELETE  &lctrl_delete  &kp PRINTSCREEN   
    &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT               &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &kp SINGLE_QUOTE 
-   &kp TAB  &td_lgui  &td_lctrl  &td_lshift  &td_lalt   &kp HOME  &kp PGDN  &kp PGUP  &kp END &kp ENTER  
+   &kp TAB  &td_lgui  &td_lctrl  &td_lshift  &td_lalt   &kp HOME  &kp PGDN  &kp PGUP  &kp END &trans  
    &trans  &trans  &trans                               &trans  &trans  &trans
                         >;
                 };
@@ -234,7 +246,7 @@
                         bindings = <
     &kp GRAVE  &lctrl_bspc  &kp BSPC  &kp DELETE  &lctrl_delete    &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-    &kp ENTER  &td_lgui  &td_lctrl  &td_lshift  &td_lalt             &trans  &trans  &trans  &kp MINUS  &kp EQUAL
+    &trans  &td_lgui  &td_lctrl  &td_lshift  &td_lalt             &trans  &trans  &trans  &kp MINUS  &kp EQUAL
     &trans  &trans  &trans                                     &kp SPACE  &mo FN_LAYER  &mo BT_SEL_LAYER
                         >;
                 };
@@ -243,7 +255,7 @@
                         bindings = <
     &kp TILDE   &kp K_MUTE  &kp K_VOL_UP  &kp K_VOL_DN  &kp K_PLAY_PAUSE    &trans  &trans  &kp PIPE  &kp LBRC  &kp RBRC
     &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                               &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
-    &kp TAB  &td_lgui  &td_lctrl  &td_lshift  &td_lalt                        &trans  &trans  &trans  &kp UNDER  &kp PLUS
+    &trans  &td_lgui  &td_lctrl  &td_lshift  &td_lalt                        &trans  &trans  &trans  &kp UNDER  &kp PLUS
     &trans  &kp PRINTSCREEN  &trans                                                    &trans  &trans  &trans 
                         >;
                 };
