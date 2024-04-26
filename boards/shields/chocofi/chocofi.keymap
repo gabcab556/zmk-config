@@ -176,12 +176,12 @@
         combo_tab {
             timeout-ms = <40>;
             key-positions = <32 10>;
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp TAB>;
         };
         combo_enter_left {
             timeout-ms = <40>;
             key-positions = <32 20>;
-            bindings = <&kp ESCAPE>;
+            bindings = <&kp TAB>;
         };
         // SPECIAL KEY COMBOS (RIGHT HAND) //
         combo_enter_right {
@@ -244,7 +244,7 @@
 //--------------NUMBER LAYER--------------//
                 NUMBER_LAYER {
                         bindings = <
-    &kp ESCAPE  &lctrl_delete  &kp DELETE  &kp BSPC  &lctrl_bspc   &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
+    &kp GRAVE  &lctrl_bspc  &kp BSPC  &kp DELETE  &lctrl_delete    &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
     &trans  &td_lgui  &td_lctrl  &td_lshift  &td_lalt             &trans  &trans  &trans  &kp MINUS  &kp EQUAL
     &trans  &trans  &trans                                     &kp SPACE  &mo FN_LAYER  &mo BT_SEL_LAYER
