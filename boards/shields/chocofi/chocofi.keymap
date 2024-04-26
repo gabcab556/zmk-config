@@ -10,6 +10,7 @@
 #define SHIFTED_LAYER 3
 #define FN_LAYER 4
 #define BT_SEL_LAYER 5
+#define NUMPAD_LAYER 6
 
 &sk {
 //*Sticky key parameters
@@ -228,7 +229,7 @@
     &kp Q &kp W  &kp E &kp R &kp T          &kp Y &kp U  &kp I    &kp O   &kp P
     &kp A &kp S  &kp D &kp F &kp G          &kp H &kp J  &kp K     &kp L   &kp SEMICOLON
     &kp Z &kp X  &kp C &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-    &kp TAB  &td_numlayer  &td_shiftthumb    &kp SPACE  &td_navlayer  &kp RALT
+    &mo NUMPAD_LAYER  &td_numlayer  &td_shiftthumb    &kp SPACE  &td_navlayer  &kp RALT
                         >;
                 };
 //--------------NAVIGATION_LAYER--------------//
@@ -277,6 +278,15 @@
     &trans  &trans  &trans                                              &trans  &trans  &trans  
                         >;
                 };
-    };
+//--------------NUMPAD LAYER--------------//
+                NUMPAD_LAYER {
+                        bindings = <
+    &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans
+    &trans  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans
+    &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
+    &trans  &trans  &trans                    &trans  &trans  &trans  
+                        >;
+                };
+    }; 
 
 };
