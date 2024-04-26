@@ -145,7 +145,7 @@
     };
 
     combos {
-        compatible = "zmk,combos"
+        compatible = "zmk,combos";
         // HOMEROW MOD COMBOS (LEFT HAND) //
         combo_lshift {
             timeout-ms = <40>;
