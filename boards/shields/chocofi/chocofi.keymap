@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&sl NUMBER_LAYER>, <&mo NUMPAD_LAYER>;
+            bindings = <&sl NUMBER_LAYER>, <&mo NUMPAD_LAYER>, <NUMPAD_SYMBOLS_LAYER>;
         };
         // NAVIGATION TAP DANCE //
         td_navlayer: navigation_layer_tap_dance {
