@@ -170,7 +170,7 @@
         // SPECIAL KEY COMBOS (LEFT HAND) //
         combo_escape {
             timeout-ms = <40>;
-            key-positions = <32 0 1>;
+            key-positions = <32 0 >;
             bindings = <&kp ESCAPE>;
         };
         combo_tab {
