@@ -202,7 +202,7 @@
         combo_lalt_tab {
             timeout-ms = <40>;
             key-positions = <32 3 10>;
-            bindings = <&LA (TAB)>;
+            bindings = <&kp LA(TAB)>;
         };
         // SPECIAL KEY COMBOS (LEFT HAND) //
         combo_escape {
