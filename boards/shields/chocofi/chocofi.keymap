@@ -177,22 +177,32 @@
         combo_lctrl_lalt {
             timeout-ms = <40>;
             key-positions = <32 12 3>;
-            bindings = <&kp LS(LALT)>;
+            bindings = <&kp LC(LALT)>;
         };
         combo_lctrl_tab {
             timeout-ms = <40>;
             key-positions = <32 12 10>;
-            bindings = <&td_lshift>;
+            bindings = <&kp LC(TAB)>;
         };
         combo_lgui {
             timeout-ms = <40>;
             key-positions = <32 2>;
             bindings = <&td_lgui>;
         };
+        combo_lgui_lshift {
+            timeout-ms = <40>;
+            key-positions = <32 3 13>;
+            bindings = <&kp LG(LSHIFT)>;
+        };
         combo_lalt {
             timeout-ms = <40>;
             key-positions = <32 3>;
             bindings = <&td_lalt>;
+        };
+        combo_lalt_tab {
+            timeout-ms = <40>;
+            key-positions = <32 3 10>;
+            bindings = <&LA (TAB)>;
         };
         // SPECIAL KEY COMBOS (LEFT HAND) //
         combo_escape {
