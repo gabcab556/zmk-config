@@ -154,10 +154,35 @@
             key-positions = <32 13>;
             bindings = <&td_lshift>;
         };
+        combo_lshift_ctrl {
+            timeout-ms = <40>;
+            key-positions = <32 13 12>;
+            bindings = <&kp LS(LCTRL)>;
+        };
+        combo_lshift_tab {
+            timeout-ms = <40>;
+            key-positions = <32 13 10>;
+            bindings = <&kp LS(TAB)>;
+        };
+        combo_lshift_enter {
+            timeout-ms = <40>;
+            key-positions = <32 13 20>;
+            bindings = <&kp LS(ENTER)>;
+        };
         combo_lctrl {
             timeout-ms = <40>;
             key-positions = <32 12>;
             bindings = <&td_lctrl>;
+        };
+        combo_lctrl_lalt {
+            timeout-ms = <40>;
+            key-positions = <32 12 3>;
+            bindings = <&kp LS(LALT)>;
+        };
+        combo_lctrl_tab {
+            timeout-ms = <40>;
+            key-positions = <32 12 10>;
+            bindings = <&td_lshift>;
         };
         combo_lgui {
             timeout-ms = <40>;
