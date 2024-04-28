@@ -12,6 +12,7 @@
 #define BT_SEL_LAYER 5
 #define NUMPAD_LAYER 6
 #define NUMPAD_SYMBOLS_LAYER 7
+#define MIRROR_LETTERS_LEFT_LAYER 8
 
 &sk {
 //*Sticky key parameters
@@ -93,7 +94,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&sl NUMBER_LAYER>, <&mo NUMPAD_LAYER>, <&mo NUMPAD_SYMBOLS_LAYER>;
+            bindings = <&sl NUMBER_LAYER>, <&mo NUMPAD_LAYER>, <&mo NUMPAD_SYMBOLS_LAYER> <&mo MIRROR_LETTERS_LEFT_LAYER>;
         };
         // NAVIGATION TAP DANCE //
         td_navlayer: navigation_layer_tap_dance {
@@ -328,8 +329,8 @@
                         bindings = <
     &trans  &kp N1  &kp N2  &kp N3  &kp MINUS    &trans  &kp N1  &kp N2  &kp N3  &trans
     &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &kp N4  &kp N5  &kp N6  &trans
-    &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &kp N7  &kp N8  &kp N9  &kp N0
-    &trans  &trans  &trans                    &trans  &trans  &trans  
+    &trans  &kp N7  &kp N8  &kp N9  &kp N0       &trans  &kp N7  &kp N8  &kp N9  &kp N0
+    &trans  &trans  &trans                       &trans  &trans  &trans  
                         >;
                 };
 //--------------NUMPAD SYMBOLS LAYER--------------//
@@ -339,6 +340,15 @@
     &trans  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &trans  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS
     &trans  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR      &trans  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR
     &trans  &trans  &trans                               &trans  &trans  &trans  
+                        >;
+                };
+//--------------MIRROR_LETTERS_LAYER--------------//
+                MIRROR_LETTERS_LEFT_LAYER {
+                            bindings = <
+    &kp P  &kp O &kp I  &kp U  &kp Y              &trans  &trans  &trans  &trans  &trans
+    &trans  &kp L  &kp K  &kp J  &kp H            &trans  &trans  &trans  &trans  &trans
+    &kp FSLH  &kp DOT  &kp COMMA  &kp M  &kp N    &trans  &trans  &trans  &trans  &trans
+    &trans  &trans  &trans                        &trans  &trans  &trans
                         >;
                 };
     }; 
