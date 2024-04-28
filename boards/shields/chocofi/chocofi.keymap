@@ -281,7 +281,7 @@
 //--------------NAVIGATION_LAYER--------------//
                 NAVIGATION_LAYER {
                         bindings = <
-   &trans  &lctrl_bspc  &kp BSPC  &kp DELETE  &lctrl_delete      &lctrl_bspc  &kp BSPC  kp DELETE  &lctrl_delete  &kp PRINTSCREEN   
+   &trans  &lctrl_bspc  &kp BSPC  &kp DELETE  &lctrl_delete      &lctrl_bspc  &kp BSPC  &kp DELETE  &lctrl_delete  &kp PRINTSCREEN   
    &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                 &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &kp SINGLE_QUOTE 
    &trans  &kp HOME  &kp PGUP  &kp PGDN  &kp END                 &kp HOME  &kp PGDN  &kp PGUP  &kp END &trans  
    &trans  &trans  &trans                                        &trans  &trans  &trans
