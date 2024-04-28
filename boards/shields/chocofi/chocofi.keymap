@@ -100,7 +100,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sl NAVIGATION_LAYER>, <&nav_ctrl>, <&nav_shift_ctrl>;
+            bindings = <&mo NAVIGATION_LAYER>, <&nav_ctrl>, <&nav_shift_ctrl>;
         };
         // MOD TAP DANCES //
         td_lshift: lshft_tap_dance {
