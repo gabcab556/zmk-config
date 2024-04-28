@@ -94,7 +94,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&sl NUMBER_LAYER>, <&mo NUMPAD_LAYER>, <&mo NUMPAD_SYMBOLS_LAYER>, <&mo MIRROR_LETTERS_LEFT_LAYER>;
+            bindings = <&sl NUMBER_LAYER>, <&mo MIRROR_LETTERS_LEFT_LAYER>;
+        };
+        // NUMPAD_LAYER TAP DANCE //
+        td_numpadlayer: numpad_layer_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&mo NUMPAD_LAYER>, <&mo NUMPAD_SYMBOLS_LAYER>;
         };
         // NAVIGATION TAP DANCE //
         td_navlayer: navigation_layer_tap_dance {
@@ -275,7 +282,7 @@
     &kp Q &kp W  &kp E &kp R &kp T          &kp Y &kp U  &kp I    &kp O   &kp P
     &kp A &kp S  &kp D &kp F &kp G          &kp H &kp J  &kp K     &kp L   &kp SEMICOLON
     &kp Z &kp X  &kp C &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-    &td_navlayer  &td_numlayer  &td_shiftthumb    &kp SPACE  &td_navlayer  &td_numlayer
+    &td_numpadlayer  &td_numlayer  &td_shiftthumb    &kp SPACE  &td_navlayer  &td_numpadlayer
                         >;
                 };
 //--------------NAVIGATION_LAYER--------------//
