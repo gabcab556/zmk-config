@@ -44,6 +44,15 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+         // LSHIFT + LCTRL
+        lshift_lctrl: lshift_lctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &sk LSHIFT>
+                , <&macro_tap &sk LCTRL>
+                ;
+        };
         nav_ctrl: nav_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -154,10 +163,10 @@
             key-positions = <32 13>;
             bindings = <&td_lshift>;
         };
-        combo_lshift_ctrl {
+        combo_lshift_lctrl {
             timeout-ms = <40>;
             key-positions = <32 13 12>;
-            bindings = <&kp LS(LCTRL)>;
+            bindings = <&lshift_lctrl>;
         };
         combo_lshift_tab {
             timeout-ms = <40>;
