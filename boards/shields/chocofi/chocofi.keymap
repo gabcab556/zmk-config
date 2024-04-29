@@ -139,7 +139,7 @@
         };
         combo_lgui {
             timeout-ms = <40>;
-            key-positions = <32 23>;
+            key-positions = <32 21>;
             bindings = <&td_lgui>;
         };
         combo_lalt {
