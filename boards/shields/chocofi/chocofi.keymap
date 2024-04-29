@@ -255,7 +255,7 @@
 //--------------NAVIGATION_LAYER--------------//
                 NAVIGATION_LAYER {
                         bindings = <
-   &kp PRINTSCREEN  &kp HOME  &kp  PGUP  &kp PGDOWN  &kp END           &kp HOME  &kp PGDN  &kp PGUP  &kp END  &kp PRINTSCREEN   
+   &kp PRINTSCREEN  &kp HOME  &kp  PGUP  &kp PGDN  &kp END           &kp HOME  &kp PGDN  &kp PGUP  &kp END  &kp PRINTSCREEN   
    &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &trans 
    &trans  &kp K_MUTE  &kp K_VOL_UP  &kp K_VOL_DN  &kp K_PLAY_PAUSE    &kp K_PLAY_PAUSE  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &trans 
    &trans  &trans  &trans                                              &trans  &trans  &trans
