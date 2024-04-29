@@ -46,6 +46,26 @@
                 , <&macro_release &mo NAVIGATION_LAYER>
                 ;
         };
+        //LCTRL + BSPC
+        lctrl_bspc: lctrl_bspc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp BSPC>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+         //LCTRL + DELETE
+        lctrl_delete: lctrl_delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp DELETE>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
         lshift_lctrl: lshift_lctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
