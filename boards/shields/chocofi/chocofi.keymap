@@ -158,7 +158,6 @@
 
     combos {
         compatible = "zmk,combos";
-        slow-release;
         // HOMEROW MOD COMBOS (LEFT HAND) //
         combo_lshift {
             timeout-ms = <40>;
@@ -234,6 +233,7 @@
         combo_backspace {
             timeout-ms = <40>;
             key-positions = <33 16>;
+            slow-release = <33>;
             bindings = <&kp backspace>;
         };
         combo_ctrl_backspace {
