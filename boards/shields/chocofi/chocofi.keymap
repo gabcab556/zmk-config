@@ -157,22 +157,22 @@
         // MOD COMBOS (LEFT HAND) //
         combo_lshift {
             timeout-ms = <40>;
-            key-positions = <32 23>;
+            key-positions = <32 13>;
             bindings = <&td_lshift>;
         };
         combo_lctrl {
             timeout-ms = <40>;
-            key-positions = <32 22>;
+            key-positions = <32 12>;
             bindings = <&td_lctrl>;
         };
         combo_lgui {
             timeout-ms = <40>;
-            key-positions = <32 21>;
+            key-positions = <32 2>;
             bindings = <&td_lgui>;
         };
         combo_lalt {
             timeout-ms = <40>;
-            key-positions = <32 24>;
+            key-positions = <32 3>;
             bindings = <&td_lalt>;
         };
         // SPECIAL KEY COMBOS (LEFT HAND) //
@@ -191,52 +191,11 @@
             key-positions = <32 20>;
             bindings = <&kp ENTER>;
         };
-        combo_backspace {
-            timeout-ms = <40>;
-            key-positions = <32 13>;
-            bindings = <&kp BSPC>;
-        };
-        combo_ctrl_backspace {
-            timeout-ms = <40>;
-            key-positions = <32 14>;
-            bindings = <&kp LC(BSPC)>;
-        };
-        combo_delete {
-            timeout-ms = <40>;
-            key-positions = <32 12>;
-            bindings = <&kp DELETE>;
-        };
-        combo_ctrl_delete {
-            timeout-ms = <40>;
-            key-positions = <32 11>;
-            bindings = <&kp LC(DELETE)>;
-        };
         // SPECIAL KEY COMBOS (RIGHT HAND) //
         combo_enter_right {
             timeout-ms = <40>;
             key-positions = <33 29>;
             bindings = <&kp ENTER>;
-        };
-        // MOD COMBOS (RIGHT HAND) //
-        combo_backspace_right {
-            timeout-ms = <40>;
-            key-positions = <33 16>;
-            bindings = <&kp BSPC>;
-        };
-        combo_ctrl_backspace_right {
-            timeout-ms = <40>;
-            key-positions = <33 15>;
-            bindings = <&kp LC(BSPC)>;
-        };
-        combo_delete_right {
-            timeout-ms = <40>;
-            key-positions = <33 17>;
-            bindings = <&kp DELETE>;
-        };
-        combo_ctrl_delete_right {
-            timeout-ms = <40>;
-            key-positions = <33 18>;
-            bindings = <&kp LC(DELETE)>;
         };
         // SINGLE QUOTE COMBO (RIGHT HAND) //
         combo_single_quote {
@@ -283,7 +242,7 @@
 //--------------NAVIGATION_LAYER--------------//
                 NAVIGATION_LAYER {
                         bindings = <
-   &kp PRINTSCREEN  &kp HOME  &kp PGUP  &kp PGDN  &kp END             &lctrl_bspc  &kp BSPC  &kp DELETE  &lctrl_delete  &kp PRINTSCREEN
+   &kp PRINTSCREEN  &kp HOME  &kp PGUP  &kp PGDN  &kp END              &trans  &kp DELETE  &lctrl_delete  &lctrl_bspc  &kp BSPC
    &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &trans 
    &trans  &kp K_MUTE  &kp K_VOL_UP  &kp K_VOL_DN  &kp K_PLAY_PAUSE    &kp HOME  &kp PGDN  &kp PGUP  &kp END  &kp ENTER
    &trans  &trans  &trans                                              &trans  &trans  &trans
@@ -293,10 +252,10 @@
 //--------------NUMBER LAYER--------------//
                 NUMBER_LAYER {
                         bindings = <
-    &kp GRAVE  &lctrl_delete  &kp DELETE  &kp BSPC  &lctrl_bspc              &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
+    &kp BSPC  &lctrl_bspc  &lctrl_delete  &kp DELETE              &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-    &kp SPACE  &td_lgui  &td_lctrl  &td_lshift  &td_lalt    &trans  &trans  &trans  &kp MINUS  &kp EQUAL
-    &kp PRINTSCREEN  &trans  &trans                         &kp LSHIFT  &mo FN_LAYER  &mo BT_SEL_LAYER
+    &kp TILDE  &td_lgui  &td_lctrl  &td_lshift  &td_lalt    &trans  &trans  &trans  &kp MINUS  &kp EQUAL
+    &kp PRINTSCREEN  &trans  &kp SPACE                         &kp LSHIFT  &mo FN_LAYER  &mo BT_SEL_LAYER
                         >;
                 };
 //--------------SHIFTED LAYER--------------//
