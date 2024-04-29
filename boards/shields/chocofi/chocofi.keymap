@@ -10,9 +10,6 @@
 #define SHIFTED_LAYER 3
 #define FN_LAYER 4
 #define BT_SEL_LAYER 5
-#define NUMPAD_LAYER 6
-#define NUMPAD_SYMBOLS_LAYER 7
-#define MIRROR_LETTERS_LEFT_LAYER 8
 
 &sk {
 //*Sticky key parameters
