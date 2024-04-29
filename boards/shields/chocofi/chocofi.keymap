@@ -46,6 +46,14 @@
                 , <&macro_release &mo NAVIGATION_LAYER>
                 ;
         };
+        lshift_lctrl: lshift_lctrl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &sk LSHIFT>
+                , <&macro_tap &sk LCTRL>
+                ;
+        };
 
     };
 
@@ -246,18 +254,18 @@
 //--------------BASE_LAYER--------------//
                 BASE_LAYER {
                             bindings = <
-    &kp Q &kp W  &kp E &kp R &kp T          &kp Y &kp U  &kp I    &kp O   &kp P
-    &kp A &kp S  &kp D &kp F &kp G          &kp H &kp J  &kp K     &kp L   &kp SEMICOLON
-    &kp Z &kp X  &kp C &kp V &kp B          &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-    &td_navlayer  &td_numlayer  &kp LSHIFT    &kp SPACE  &td_navlayer  &kp RALT
+    &kp Q &kp W  &kp E &kp R &kp T                &kp Y &kp U  &kp I    &kp O   &kp P
+    &kp A &kp S  &kp D &kp F &kp G                &kp H &kp J  &kp K     &kp L   &kp SEMICOLON
+    &kp Z &kp X  &kp C &kp V &kp B                &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+    &td_navlayer  &td_numlayer  &td_shiftthumb    &kp SPACE  &td_navlayer  &kp RALT
                         >;
                 };
 //--------------NAVIGATION_LAYER--------------//
                 NAVIGATION_LAYER {
                         bindings = <
-   &kp PRINTSCREEN  &kp HOME  &kp  PGUP  &kp PGDN  &kp END           &kp HOME  &kp PGDN  &kp PGUP  &kp END  &kp PRINTSCREEN   
+   &kp PRINTSCREEN  &kp HOME  &kp  PGUP  &kp PGDN  &kp END             &lctrl_bspc  &kp BSPC  &kp DELETE  &kp lctrl_DELETE  &kp PRINTSCREEN
    &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT                       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT    &trans 
-   &trans  &kp K_MUTE  &kp K_VOL_UP  &kp K_VOL_DN  &kp K_PLAY_PAUSE    &kp K_PLAY_PAUSE  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &trans 
+   &trans  &kp K_MUTE  &kp K_VOL_UP  &kp K_VOL_DN  &kp K_PLAY_PAUSE    &kp HOME  &kp PGDN  &kp PGUP  &kp END  &kp ENTER
    &trans  &trans  &trans                                              &trans  &trans  &trans
                         >;
                 };
@@ -265,7 +273,7 @@
 //--------------NUMBER LAYER--------------//
                 NUMBER_LAYER {
                         bindings = <
-    &kp GRAVE  &trans  &trans  &trans  &trans               &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
+    &kp GRAVE  &lctrl_delete  &kp DELETE  &kp BSPC  &lctrl_bspc              &trans  &trans  &kp BSLH  &kp LBKT  &kp RBKT
     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
     &kp SPACE  &td_lgui  &td_lctrl  &td_lshift  &td_lalt    &trans  &trans  &trans  &kp MINUS  &kp EQUAL
     &kp PRINTSCREEN  &trans  &trans                         &kp LSHIFT  &mo FN_LAYER  &mo BT_SEL_LAYER
