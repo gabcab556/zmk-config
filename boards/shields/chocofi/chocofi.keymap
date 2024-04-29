@@ -236,7 +236,7 @@
             slow-release;
             bindings = <&kp BSPC>;
         };
-        combo_ctrl_backspace {
+        combo_lctrl_backspace {
             timeout-ms = <40>;
             key-positions = <32 15>;
             bindings = <&lctrl_bspc>;
@@ -246,7 +246,7 @@
             key-positions = <33 17>;
             bindings = <&kp DELETE>;
         };
-        combo_enter_left {
+        combo_lctrl_delete {
             timeout-ms = <40>;
             key-positions = <33 18>;
             bindings = <&lctrl_delete>;
