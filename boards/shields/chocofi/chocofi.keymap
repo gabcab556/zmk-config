@@ -203,17 +203,17 @@
             key-positions = <33 16>;
             bindings = <&kp backspace>;
         };
-        combo_ctrl_backspace {
+        combo_ctrl_backspace_right {
             timeout-ms = <40>;
             key-positions = <33 15>;
             bindings = <&kp LC(BSPC)>;
         };
-        combo_delete {
+        combo_delete_right {
             timeout-ms = <40>;
             key-positions = <33 17>;
             bindings = <&kp DELETE>;
         };
-        combo_ctrl_delete {
+        combo_ctrl_delete_right {
             timeout-ms = <40>;
             key-positions = <33 18>;
             bindings = <&kp LC(DELETE)>;
